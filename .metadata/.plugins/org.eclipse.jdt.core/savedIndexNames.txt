@@ -1,5 +1,9 @@
 INDEX VERSION 1.134+C:\javastudy\skywalk-worksapce\.metadata\.plugins\org.eclipse.jdt.core
 1390473676.index
 3589285458.index
+<<<<<<< HEAD
+1390473676.index
+=======
 1865797976.index
 900147617.index
+>>>>>>> 579ec91a8d70fd2c01aec315ccdc496792067603

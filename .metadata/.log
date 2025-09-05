@@ -6364,6 +6364,10 @@ Caused by: java.lang.IllegalStateException: The Plug-in Development Environment 
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2025-09-05 17:03:30.532
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+<<<<<<< HEAD
+
+!ENTRY org.eclipse.pde.core 4 0 2025-09-05 17:14:10.089
+=======
 >>>>>>> 8934f11bd8b4a849a626036a1a01326784d1b7b7
 !SESSION 2025-09-05 17:13:09.116 -----------------------------------------------
 eclipse.buildId=4.32.0.20240606-1231
@@ -6891,6 +6895,7 @@ EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
 !ENTRY org.eclipse.pde.core 4 0 2025-09-05 17:14:58.145
+>>>>>>> 579ec91a8d70fd2c01aec315ccdc496792067603
 !MESSAGE FrameworkEvent ERROR
 !STACK 0
 org.osgi.framework.BundleException: Exception in org.eclipse.pde.internal.core.PDECore.stop() of bundle org.eclipse.pde.core.
