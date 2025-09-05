@@ -6,17 +6,16 @@ public class Popup {
 	private int popupNo;
 	private String popupWriter;
 	private String popupName;
-	private String popupDesciption;
 	private String popupStart;
 	private String popupEnd;
 	private String popupLocation;
-	public Popup(int popupNo, String popupWriter, String popupName, String popupDesciption, String popupStart,
+	
+	public Popup(int popupNo, String popupWriter, String popupName, String popupStart,
 			String popupEnd, String popupLocation) {
 		super();
 		this.popupNo = popupNo;
 		this.popupWriter = popupWriter;
 		this.popupName = popupName;
-		this.popupDesciption = popupDesciption;
 		this.popupStart = popupStart;
 		this.popupEnd = popupEnd;
 		this.popupLocation = popupLocation;
@@ -42,12 +41,7 @@ public class Popup {
 	public void setPopupName(String popupName) {
 		this.popupName = popupName;
 	}
-	public String getPopupDesciption() {
-		return popupDesciption;
-	}
-	public void setPopupDesciption(String popupDesciption) {
-		this.popupDesciption = popupDesciption;
-	}
+
 	public String getPopupStart() {
 		return popupStart;
 	}
@@ -69,12 +63,12 @@ public class Popup {
 	@Override
 	public String toString() {
 		return "Popup [popupNo=" + popupNo + ", popupWriter=" + popupWriter + ", popupName=" + popupName
-				+ ", popupDesciption=" + popupDesciption + ", popupStart=" + popupStart + ", popupEnd=" + popupEnd
+				+ ", popupStart=" + popupStart + ", popupEnd=" + popupEnd
 				+ ", popupLocation=" + popupLocation + "]";
 	}
 	@Override
 	public int hashCode() {
-		return Objects.hash(popupDesciption, popupEnd, popupLocation, popupName, popupNo, popupStart, popupWriter);
+		return Objects.hash( popupEnd, popupLocation, popupName, popupNo, popupStart, popupWriter);
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -85,8 +79,8 @@ public class Popup {
 		if (getClass() != obj.getClass())
 			return false;
 		Popup other = (Popup) obj;
-		return Objects.equals(popupDesciption, other.popupDesciption) && Objects.equals(popupEnd, other.popupEnd)
-				&& Objects.equals(popupLocation, other.popupLocation) && Objects.equals(popupName, other.popupName)
+		return 
+				 Objects.equals(popupLocation, other.popupLocation) && Objects.equals(popupName, other.popupName)
 				&& popupNo == other.popupNo && Objects.equals(popupStart, other.popupStart)
 				&& Objects.equals(popupWriter, other.popupWriter);
 	}

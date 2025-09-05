@@ -1,0 +1,69 @@
+package com.kh.user.model.vo;
+
+import java.util.Objects;
+
+public class User {
+	private String userId; //USER_ID
+	private String userPwd; //USER_PWD
+	private String userName; //USER_NAME
+	private int userAge; //USER_AGE
+	private char userGender; //USER_GENDER
+
+	public User() {
+		super();
+	}
+
+	public User(String userId, String userPwd, String userName, int userAge, char userGender) {
+		super();
+		this.userId = userId;
+		this.userPwd = userPwd;
+		this.userName = userName;
+		this.userAge = userAge;
+		this.userGender = userGender;
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public String getUserPwd() {
+		return userPwd;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public int getUserAge() {
+		return userAge;
+	}
+
+	public char getUserGender() {
+		return userGender;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(userAge, userGender, userId, userName, userPwd);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		return userAge == other.userAge && userGender == other.userGender && Objects.equals(userId, other.userId)
+				&& Objects.equals(userName, other.userName) && Objects.equals(userPwd, other.userPwd);
+	}
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userPwd=" + userPwd + ", userName=" + userName + ", userAge=" + userAge
+				+ ", userGender=" + userGender + "]";
+	}
+	
+}

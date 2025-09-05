@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>POPUP SQL</comment>
+<entry key="A">B</entry>
+	<entry key = "findALl">
+		SELECT
+			 , POPUP_NO 
+			 , POPUP_WRITER 
+			 , POPUP_NAME 
+			 , POPUP_START 
+			 , POPUP_END 
+			 , POPUP_LOCATION
+		  FOME
+		       TB_POPUP
+		 ORDER
+		    BY 
+		       POPUP_NO ASC
+	
+	</entry>
+</properties>

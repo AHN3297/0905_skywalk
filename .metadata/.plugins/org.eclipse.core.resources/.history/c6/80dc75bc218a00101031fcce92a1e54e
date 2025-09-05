@@ -1,0 +1,19 @@
+package com.kh.pop.model.dao;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class PopDAO {
+	
+	private Properties prop = new Properties();
+	
+	public PopDao() {
+		try {
+			prop.loadFromXML(new FileInputStream("resources/member-Mapper.xml"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

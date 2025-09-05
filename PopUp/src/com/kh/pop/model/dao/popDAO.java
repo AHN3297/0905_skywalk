@@ -1,5 +1,58 @@
 package com.kh.pop.model.dao;
 
-public class PopDAO {
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
 
+import com.kh.common.JDBCTemplate;
+import com.kh.pop.model.vo.Popup;
+
+public class PopDAO {
+	
+	private Properties prop = new Properties();
+	
+	public PopDAO() {
+		try {
+			prop.loadFromXML(new FileInputStream("resources/member-Mapper.xml"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public List<Popup> findAll(Connection conn){
+		List<Popup> pops = new ArrayList();
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		String sql = prop.getProperty("findAll");
+		try {
+			pstmt = conn.prepareStatement(sql);
+			rset = pstmt.executeQuery(); 
+			
+			while(rset.next()) {
+				Popup popup = new Popup(rset.getInt("POPUP_NO")
+									   ,rset.getString("POPUP_WRITER")
+									   ,rset.getString("POPUP_NAME")
+									   ,rset.getString("POPUP_START")
+									   ,rset.getString("POPUP_END")
+									   ,rset.getString("POPUP_LOCATION"));
+				pops.add(popup);
+				                          
+			}
+			
+		}catch (SQLException e) {
+			e.printStackTrace();
+	}finally {
+		JDBCTemplate.close(rset);
+		JDBCTemplate.close(pstmt);
+	}
+	return pops;
+
+
+	}
 }
+	

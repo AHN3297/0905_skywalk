@@ -20,6 +20,7 @@ public class PopView {
 				System.out.println("4. 유저 이름으로 팝업 조회");
 				System.out.println("5. 팝업 수정");
 				System.out.println("6. 팝업 삭제");
+				System.out.println("7. 팝업 게시물 달기");
 				System.out.println("9. 유저관리로 돌아가기");
 				int menuNo = sc.nextInt();
 				sc.nextLine();
@@ -27,7 +28,7 @@ public class PopView {
 				switch(menuNo) {
 				
 				case 1 : findAll(); break;
-				case 2 : break;
+				case 2 : addPopup(); break;
 				case 3 : break;
 				case 4 : break;
 				case 5 : break;
@@ -45,9 +46,24 @@ public class PopView {
 		System.out.println("총 팝업 수는" + pops.size() + "입니다.");
 		if(pops.isEmpty()) {
 			System.out.println("팝업이 조회되지 않습니다.");
+		} else {
+			for(Popup popup : pops) {
+				System.err.println("======================================");
+				System.out.println(popup.getPopupNo()+"번 팝업의 정보");
+				System.out.println("팝업 주최자 : " + popup.getPopupWriter() + ", ");
+				System.out.println("팝업 이름 : " + popup.getPopupName() + ", ");
+				System.out.println("팝업 시작일 : " + popup.getPopupStart() + ", ");
+				System.out.println("팝업 종료일 : " + popup.getPopupEnd() + ", ");
+				System.out.println("팝업 장소 : " + popup.getPopupLocation() + ", ");
+				System.err.println("======================================");
+			}
 		}
 		
 	}
+	public void addPopup() {
+		System.out.println("팝업");
+	}
+	
 			
 }
 

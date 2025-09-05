@@ -16,3 +16,7 @@
 1757041360630	Rename resource 'popDAO.java'
 1757042564188	Rename resource 'popDTO.java'
 1757042576594	Rename resource 'popup.java'
+1757054243335	Rename resource 'member-mapper.xml'
+1757054333986	Move 'popup-mapper.xml' to 'resources'
+1757058620105	Rename resource 'user.java'
+1757058634119	Rename resource 'USer.java'

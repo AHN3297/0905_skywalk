@@ -55,7 +55,7 @@ public class User {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		User other = (User) obj;
+		user other = (user) obj;
 		return userAge == other.userAge && userGender == other.userGender && Objects.equals(userId, other.userId)
 				&& Objects.equals(userName, other.userName) && Objects.equals(userPwd, other.userPwd);
 	}
