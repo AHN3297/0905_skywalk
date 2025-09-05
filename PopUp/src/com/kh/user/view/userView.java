@@ -33,7 +33,7 @@ public class UserView {
 				break;
 			case 4:
 				break;
-			case 5:
+			case 5: PopNext();
 				System.out.println("팝업 관리로 넘어갑니다.");
 				
 			case 9:
