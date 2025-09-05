@@ -1,0 +1,48 @@
+package com.kh.pop.view;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.kh.pop.controller.PopController;
+import com.kh.pop.model.vo.Popup;
+
+public class PopView {
+	Scanner sc = new Scanner(System.in);
+	PopController pc = new PopController();
+	
+	
+		public void popMenu() {
+			while(true) {
+				System.out.println("팝업관리 페이지입니다.");
+				System.out.println("1. 전체 팝업조회");
+				System.out.println("2. 팝업추가");
+				System.out.println("3. 팝업 이름으로 조회");
+				System.out.println("4. 유저 이름으로 팝업 조회");
+				System.out.println("5. 팝업 수정");
+				System.out.println("6. 팝업 삭제");
+				System.out.println("9. 유저관리로 돌아가기");
+				int menuNo = sc.nextInt();
+				sc.nextLine();
+				
+				switch(menuNo) {
+				
+				case 1 : findAll(); break;
+				case 2 : break;
+				case 3 : break;
+				case 4 : break;
+				case 5 : break;
+				case 6 : break;
+				case 9 : System.out.println("유저관리 페이지로 돌아갑니다.");return;
+				default : System.out.println("잘못된 메뉴입니다.");
+		
+				}
+			}
+	}
+	public void findAll() {
+		System.out.println("전체 팝업 조회");
+		List<Popup> pops = pc.findAll();
+	}
+			
+}
+
+
