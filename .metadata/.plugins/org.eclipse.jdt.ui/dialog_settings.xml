@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<section name="BuildPathsPropertyPage">
 		<item key="pageIndex" value="2"/>
 	</section>
+=======
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\haneul\dev"/>
+>>>>>>> 13c2d81daf9aeee6d4dfde64fb28bf558fb989bf
 	<section name="completion_proposal_size">
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
+<<<<<<< HEAD
+=======
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
+	</section>
+>>>>>>> 13c2d81daf9aeee6d4dfde64fb28bf558fb989bf
 </section>
