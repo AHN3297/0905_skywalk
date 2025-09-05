@@ -1,5 +1,5 @@
 package com.kh.user.model.dao;
 
-public class userDAO {
+public class UserDAO {
 
 }

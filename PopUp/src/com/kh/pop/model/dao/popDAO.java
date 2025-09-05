@@ -1,5 +1,5 @@
 package com.kh.pop.model.dao;
 
-public class popDAO {
+public class PopDAO {
 
 }

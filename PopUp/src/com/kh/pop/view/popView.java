@@ -1,5 +1,5 @@
 package com.kh.pop.view;
 
-public class popView {
+public class PopView {
 
 }

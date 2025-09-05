@@ -1,5 +1,5 @@
 package com.kh.pop.model.vo;
 
-public class popup {
+public class Popup {
 
 }
