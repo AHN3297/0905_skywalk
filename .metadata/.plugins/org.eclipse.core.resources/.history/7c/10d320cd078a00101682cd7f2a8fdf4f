@@ -1,0 +1,27 @@
+package com.kh.user.view;
+
+import java.util.Scanner;
+
+import com.kh.user.controller.UserController;
+
+public class UserView {
+	
+	private Scanner sc = new Scanner(System.in);
+	private UserController uc = new UserController();
+	
+	public void mainMenu(){
+		System.out.println("유저 관리 페이지입니다.");
+		System.out.println("1. 전체 유저 보기");
+		System.out.println("2. 유저 정보 보기");
+		System.out.println("3. 유저 가입");
+		System.out.println("4. 유저 정보 수정");
+		System.out.println("5. 유저 삭제");
+		System.out.println("6. 팝업 관리");
+		System.out.println("9. 프로그램종료");
+		int menuNo = sc.nextInt();
+		sc.nextLine();
+		
+		
+	}
+
+}
