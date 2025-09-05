@@ -51,8 +51,15 @@ public class PopDAO {
 		JDBCTemplate.close(pstmt);
 	}
 	return pops;
-
-
+	}
+	
+	public int addPop(Connection conn, Popup popup) {
+		PreparedStatement pstmt = null;
+		int result = 0;
+		
+		Properties prop = new Properties();
+		String sql = prop.getProperty("addPop");
+		
 	}
 }
 	

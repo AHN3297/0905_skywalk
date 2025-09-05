@@ -26,7 +26,7 @@ public class UserService {
 	}
 	
 	public int UserInsert() {
-		int result = new UserDao().UserInsert(conn);
+		int result = new UserDAO().UserInsert(conn);
 		
 		return result;
 	}

@@ -11,7 +11,7 @@
 			 , POPUP_START 
 			 , POPUP_END 
 			 , POPUP_LOCATION
-		  FOME
+		  FROM
 		       TB_POPUP
 		 ORDER
 		    BY 

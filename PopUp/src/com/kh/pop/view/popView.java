@@ -61,7 +61,26 @@ public class PopView {
 		
 	}
 	public void addPopup() {
-		System.out.println("팝업");
+		System.out.println("팝업추가하기");
+		System.out.println("주최자를 입력하세요 > ");
+		String writer = sc.nextLine();
+		System.out.println("팝업 명을 입력하세요 > ");
+		String name = sc.nextLine();
+		System.out.println("팝업 시작일을 입력하세요 > ");
+		String start = sc.nextLine();
+		System.out.println("팝업 종료일을 입력하세요 > ");
+		String end = sc.nextLine();
+		System.out.println("팝업 장소를 입력하세요(시, 구까지만) > ");
+		String location = sc.nextLine();
+		
+		int result = pc.addPopup(writer, name, start, end, location);
+		
+		if(result >0){
+			System.out.println("팝업추가에 성공하였습니다.");
+		}else {
+			System.out.println("팝업 추가에 실패했습니다.");
+		}
+
 	}
 	
 			

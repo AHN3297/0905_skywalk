@@ -26,6 +26,9 @@ public class PopService {
 	public List<Popup> findAll(){
 		return executeQuery(new PopDAO()::findAll);
 	}
+	public int addPop(Popup popup) {
+		return executeQuery(conn -> new PopDAO().addPop(conn, popup));
+	}
 	
 
 }

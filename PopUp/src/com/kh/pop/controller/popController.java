@@ -10,5 +10,12 @@ public class PopController {
 		List<Popup> pops = new PopService().findAll();
 		return pops;
 	}
+	
+	public int addPopup(String writer, String name, String start, String end, String location) {
+		Popup popup = new Popup(writer, name, start, end, location);
+		
+		int result = new PopService().addPop(popup);
+		return result;
+	}
 
 }

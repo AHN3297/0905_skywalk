@@ -10,6 +10,15 @@ public class Popup {
 	private String popupEnd;
 	private String popupLocation;
 	
+	
+	public Popup(String popupWriter, String popupName, String popupStart, String popupEnd, String popupLocation) {
+		super();
+		this.popupWriter = popupWriter;
+		this.popupName = popupName;
+		this.popupStart = popupStart;
+		this.popupEnd = popupEnd;
+		this.popupLocation = popupLocation;
+	}
 	public Popup(int popupNo, String popupWriter, String popupName, String popupStart,
 			String popupEnd, String popupLocation) {
 		super();
