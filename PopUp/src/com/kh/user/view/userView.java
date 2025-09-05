@@ -35,6 +35,7 @@ public class UserView {
 				break;
 			case 5:
 				System.out.println("팝업 관리로 넘어갑니다.");
+				new PopView().popMenu(); break;
 				
 			case 9:
 				System.out.println("프로그램을 종료합니다.");

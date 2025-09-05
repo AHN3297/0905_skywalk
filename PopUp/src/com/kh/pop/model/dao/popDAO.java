@@ -19,7 +19,7 @@ public class PopDAO {
 	
 	public PopDAO() {
 		try {
-			prop.loadFromXML(new FileInputStream("resources/member-Mapper.xml"));
+			prop.loadFromXML(new FileInputStream("resources/popup-Mapper.xml"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
