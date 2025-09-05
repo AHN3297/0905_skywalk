@@ -1,0 +1,70 @@
+package com.kh.user.view;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.kh.pop.view.PopView;
+import com.kh.user.controller.UserController;
+import com.kh.user.model.vo.User;
+
+public class UserView {
+
+	private Scanner sc = new Scanner(System.in);
+	private UserController uc = new UserController();
+
+	public void mainMenu() {
+		while (true) {
+			System.out.println("유저 관리 페이지입니다.");
+			System.out.println("1. 전체 유저 보기");
+			System.out.println("2. 유저 가입");
+			System.out.println("3. 유저 정보 수정");
+			System.out.println("4. 유저 삭제");
+			System.out.println("5. 팝업 관리");
+			System.out.println("9. 프로그램종료");
+			int menuNo = sc.nextInt();
+			sc.nextLine();
+
+			switch (menuNo) {
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				System.out.println("팝업 관리로 넘어갑니다.");
+				
+			case 9:
+				System.out.println("프로그램을 종료합니다.");
+				return;
+			}
+		}
+	}
+	
+	public void UserfindAll() { // 전체 회원 보기 메소드
+		System.out.println("\n 전체 회원 보기입니다.");
+		System.out.println("먼가이상해요");
+		List<User> users = uc.UserFindAll();
+		
+		System.out.println("조회된 회원분들 입니다.");
+		if(users.isEmpty()) {
+			System.out.println("조회된 결과가 없습니다.");
+		} else {
+			for(User u : users) {
+				System.out.println("아이디 : " + u.getUserId());
+				System.out.print("비밀번호 : " + u.getUserPwd());
+				System.out.print("이름 : " + u.getUserName());
+				System.out.print("나이 : " + u.getUserAge());
+				System.out.println("성별 : " + u.getUserGender());
+			}
+		}
+		
+	}
+	
+	public void PopNext() { // 팝업 관리로 넘어가는 메소드
+		PopView pv = new PopView();
+		pv.popMenu();
+	}
+}
