@@ -7,13 +7,13 @@ public class User {
 	private String userPwd; //USER_PWD
 	private String userName; //USER_NAME
 	private int userAge; //USER_AGE
-	private char userGender; //USER_GENDER
+	private String userGender; //USER_GENDER
 
 	public User() {
 		super();
 	}
 
-	public User(String userId, String userPwd, String userName, int userAge, char userGender) {
+	public User(String userId, String userPwd, String userName, int userAge, String userGender) {
 		super();
 		this.userId = userId;
 		this.userPwd = userPwd;
@@ -38,7 +38,7 @@ public class User {
 		return userAge;
 	}
 
-	public char getUserGender() {
+	public String getUserGender() {
 		return userGender;
 	}
 	

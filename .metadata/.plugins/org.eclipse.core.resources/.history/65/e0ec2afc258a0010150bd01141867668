@@ -1,0 +1,17 @@
+package com.kh.user.model.service;
+
+import java.sql.Connection;
+
+import com.kh.user.model.dao.UserDAO;
+
+public class UserService {
+	private Connection conn = null;
+	
+	public UserService() {
+		this.conn = getConnection();
+	}
+	public void UserFindAll() {
+		new UserDAO().UserFindAll();
+		
+	}
+}

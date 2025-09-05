@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>USER SQL</comment>
+<entry key="UserFindAll">
+	SELECT
+		   USER_ID
+	 	 , USER_PWD
+	 	 , USER_NAME
+	 	 , USER_AGE
+	 	 , USER_GENDER
+  	  FROM
+  	  	   TB_POPCREATOR
+</entry>
+</properties>
