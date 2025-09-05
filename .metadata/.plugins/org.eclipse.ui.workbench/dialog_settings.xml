@@ -15,8 +15,13 @@
 		</section>
 	</section>
 	<section name="PropertyDialog.dialogBounds">
+<<<<<<< HEAD
 		<item key="DIALOG_X_ORIGIN" value="39"/>
 		<item key="DIALOG_Y_ORIGIN" value="153"/>
+=======
+		<item key="DIALOG_X_ORIGIN" value="568"/>
+		<item key="DIALOG_Y_ORIGIN" value="158"/>
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 		<item key="DIALOG_WIDTH" value="928"/>
 		<item key="DIALOG_HEIGHT" value="556"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

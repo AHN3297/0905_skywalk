@@ -1,0 +1,12 @@
+package com.kh.user.model.vo;
+
+public class User {
+	private String userId; //USER_ID
+	private String userPwd; //USER_PWD
+	private String userName; //USER_NAME
+	private int userAge; //USER_AGE
+	private char userGender; //USER_GENDER
+	
+	
+	
+}

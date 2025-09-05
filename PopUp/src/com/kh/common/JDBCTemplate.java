@@ -1,10 +1,17 @@
 package com.kh.common;
 
+<<<<<<< HEAD
+=======
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+<<<<<<< HEAD
 
 public class JDBCTemplate {
 	/*
@@ -16,12 +23,20 @@ public class JDBCTemplate {
 	// JDBC Driver를 등록하는 메소드
 	//프로그램 실행 중 단 한 번만 실행되면됨
 	public static void registDriver() {
+=======
+import java.util.Properties;
+
+public class JDBCTemplate {
+	public static void registDriver() {
+		
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
+<<<<<<< HEAD
 	
 	//DB의 연결정보를 가지고 있는Connection객체를 생성해서 반환해주는메소드
 	public static Connection getConnection() {
@@ -41,10 +56,43 @@ public class JDBCTemplate {
 	// Connection 객체를 이용해서 commit 시켜주는 메소드
 	
 	public static void commit(Connection conn) {
+=======
+
+	public static Connection getConnection() {
+		
+		try {
+			Properties prop = new Properties();
+			
+			prop.load(new FileInputStream("resources/driver.properties"));
+			Connection conn = DriverManager.getConnection(prop.getProperty("URL")
+														, prop.getProperty("USERNAME")
+														, prop.getProperty("PASSWORD"));
+			
+			conn.setAutoCommit(false);
+			
+			return conn;
+		} catch (SQLException e) {
+			
+			e.printStackTrace();
+		} catch (FileNotFoundException e) {
+			
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	public static void commit(Connection conn) {
+		
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 		try {
 			if(conn != null) {
 				conn.commit();
 			}
+<<<<<<< HEAD
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
@@ -58,18 +106,41 @@ public class JDBCTemplate {
 			}
 			
 		}catch(SQLException e) {
+=======
+			
+		} catch (SQLException e) {
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 			e.printStackTrace();
 		}
 		
 	}
+<<<<<<< HEAD
 	// JDBC용 객체를 반납해주는 메소드 (각 개체별로)
 	// Connection 객체를 전달받아서 반납해주는 메소드
 	public static void close(Connection conn) {
+=======
+
+	public static void rollback(Connection conn) {
+		
+		try {
+			if(conn != null) {
+				conn.rollback();
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void close(Connection conn) {
+		
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 		try {
 			if(conn != null) {
 				conn.close();
 			}
 			
+<<<<<<< HEAD
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
@@ -88,15 +159,52 @@ public class JDBCTemplate {
 	
 	public static void close(ResultSet rset) {
 		try {
+=======
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void close(Statement stmt) {
+		
+		try {
+			
+			if(stmt != null) {
+				stmt.close();
+			}
+			
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+	public static void close(ResultSet rset) {
+		
+		try {
+			
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 			if(rset != null) {
 				rset.close();
 			}
 			
+<<<<<<< HEAD
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
 	}
 	
+=======
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	
+>>>>>>> 96dca6788cc277b1ca92f9e2099361ac170ecc6d
 }
 
 
