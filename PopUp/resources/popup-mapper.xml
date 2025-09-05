@@ -3,9 +3,9 @@
 <properties>
 <comment>POPUP SQL</comment>
 <entry key="A">B</entry>
-	<entry key = "findALl">
+	<entry key = "findAll">
 		SELECT
-			 , POPUP_NO 
+			   POPUP_NO 
 			 , POPUP_WRITER 
 			 , POPUP_NAME 
 			 , POPUP_START 
