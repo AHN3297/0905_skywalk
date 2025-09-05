@@ -34,4 +34,9 @@
 2025-09-05 17:17:25,155 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 =======
 >>>>>>> 579ec91a8d70fd2c01aec315ccdc496792067603
+<<<<<<< HEAD
 >>>>>>> 4a9f922ddcd966d6e561c69c1d9f69f9b528be37
+=======
+2025-09-05 17:18:14,803 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-09-05 17:18:28,328 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85

@@ -25,8 +25,16 @@ public class UserService {
 		return users;
 	}
 	
+<<<<<<< HEAD
 	public int UserInsert() {
 		int result = new UserDAO().UserInsert(conn);
+=======
+	public int UserInsert(User user) {
+		
+		int result = new UserDao().UserInsert(conn, user);
+		
+		JDBCTemplate.close(conn);
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85
 		
 		return result;
 	}

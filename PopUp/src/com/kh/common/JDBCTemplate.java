@@ -10,7 +10,10 @@ import java.sql.Statement;
 import java.util.Properties;
 
 public class JDBCTemplate {
+<<<<<<< HEAD
 
+=======
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85
 	public static void registDriver() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -18,15 +21,22 @@ public class JDBCTemplate {
 			e.printStackTrace();
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85
 
 	public static Connection getConnection() {
 		Properties prop = new Properties();
 		try {
 			prop.load(new FileInputStream("resources/driver.properties"));
+<<<<<<< HEAD
 			
 
 			
+=======
+
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85
 			Connection conn = DriverManager.getConnection(prop.getProperty("URL")
 														 ,prop.getProperty("USERNAME")
 														 ,prop.getProperty("PASSWORD"));
@@ -38,8 +48,11 @@ public class JDBCTemplate {
 		return null;
 	}
 	
+<<<<<<< HEAD
 
 	
+=======
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85
 	public static void commit(Connection conn) {
 		try {
 			if(conn != null) {
@@ -50,7 +63,10 @@ public class JDBCTemplate {
 		}
 	}
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85
 	public static void rollback(Connection conn) {
 		try {
 			if(conn !=null) {

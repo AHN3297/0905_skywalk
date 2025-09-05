@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+<<<<<<< HEAD
 	<section name="PropertyDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="112"/>
 		<item key="DIALOG_Y_ORIGIN" value="14"/>
 		<item key="DIALOG_WIDTH" value="928"/>
+=======
+	<section name="WorkbenchPreferenceDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="651"/>
+		<item key="DIALOG_Y_ORIGIN" value="158"/>
+		<item key="DIALOG_WIDTH" value="635"/>
+>>>>>>> b89b351807aa8af79cda980416a1a7eafdb3ac85
 		<item key="DIALOG_HEIGHT" value="556"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
