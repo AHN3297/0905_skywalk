@@ -14,8 +14,10 @@ public class UserController {
 	}
 	
 	public int UserInsert(String userId,String userPwd,String userName,int userAge,String userGender) {
+		// 받은 매개변수들 User객체로 정보를 받아주기
+		User user = new User(userId, userPwd, userName, userAge, userGender);
 		
-		 = new UserService().UserInsert();
+		int result = new UserService().UserInsert(user);
 		
 		return result;
 	}
